@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Adarsh Prasannan | Data Analyst</title>
+
+<meta name="description" content="Adarsh Prasannan – Data Analyst Portfolio | Power BI, Python, SQL">
+<meta name="keywords" content="Data Analyst, Power BI, Python, SQL, Portfolio">
+<meta name="author" content="Adarsh Prasannan">
+
+<link rel="stylesheet" href="css/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header>
+  <h1>Adarsh</h1>
+  <button id="themeToggle">🌙</button>
+</header>
+
+<section class="hero">
+  <h2>Hi, I'm <span>Adarsh Prasannan</span></h2>
+  <p>Data Analyst | Power BI • Python • SQL</p>
+  <a href="assets/resume.pdf" download class="btn">Download Resume</a>
+</section>
+
+<section class="about reveal">
+  <h3>About Me</h3>
+  <p>
+    I transform complex data into meaningful business insights through analytics,
+    visualization, and problem-solving.
+  </p>
+</section>
+
+<section class="skills reveal">
+  <h3>Skills</h3>
+
+  <div class="skill">
+    <span>Power BI</span>
+    <div class="bar"><div style="width:90%"></div></div>
+  </div>
+
+  <div class="skill">
+    <span>Python</span>
+    <div class="bar"><div style="width:85%"></div></div>
+  </div>
+
+  <div class="skill">
+    <span>SQL</span>
+    <div class="bar"><div style="width:80%"></div></div>
+  </div>
+</section>
+
+<section class="projects reveal">
+  <h3>Projects</h3>
+
+  <div class="project" onclick="openModal()">
+    <h4>IPL Cricket Performance Analytics</h4>
+    <p>17 seasons | Power BI | DAX</p>
+  </div>
+</section>
+
+<section class="contact reveal">
+  <h3>Contact</h3>
+  <form id="contactForm">
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Your Email" required>
+    <textarea placeholder="Message" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+<!-- MODAL -->
+<div id="modal">
+  <div class="modal-content">
+    <span onclick="closeModal()">×</span>
+    <h3>IPL Analytics Case Study</h3>
+    <p>End-to-end Power BI dashboard using 17 years of IPL data.</p>
+  </div>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
