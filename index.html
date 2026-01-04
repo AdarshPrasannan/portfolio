@@ -3,68 +3,64 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Adarsh Prasannan | Data Analyst</title>
-
-<meta name="description" content="Adarsh Prasannan – Data Analyst Portfolio | Power BI, Python, SQL">
-<meta name="keywords" content="Data Analyst, Power BI, Python, SQL, Portfolio">
-<meta name="author" content="Adarsh Prasannan">
-
-<link rel="stylesheet" href="css/style.css">
+<title>Adarsh Prasannan — Portfolio</title>
+<link rel="stylesheet" href="style.css">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
 
-<header>
-  <h1>Adarsh</h1>
+<!-- NAVBAR -->
+<header class="navbar">
+  <div class="logo">Adarsh</div>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
   <button id="themeToggle">🌙</button>
 </header>
 
-<section class="hero">
-  <h2>Hi, I'm <span>Adarsh Prasannan</span></h2>
-  <p>Data Analyst | Power BI • Python • SQL</p>
-  <a href="assets/resume.pdf" download class="btn">Download Resume</a>
+<!-- HERO -->
+<section id="home" class="hero">
+  <h1>Hey, I'm <span>Adarsh</span></h1>
+  <p>Data Analyst | Python • Power BI • SQL</p>
 </section>
 
-<section class="about reveal">
-  <h3>About Me</h3>
-  <p>
-    I transform complex data into meaningful business insights through analytics,
-    visualization, and problem-solving.
-  </p>
+<!-- ABOUT -->
+<section id="about" class="about">
+  <h2>About Me</h2>
+  <p>Professional data analyst passionate about transforming data into insights that drive decisions.</p>
 </section>
 
-<section class="skills reveal">
-  <h3>Skills</h3>
-
-  <div class="skill">
-    <span>Power BI</span>
-    <div class="bar"><div style="width:90%"></div></div>
-  </div>
-
-  <div class="skill">
-    <span>Python</span>
-    <div class="bar"><div style="width:85%"></div></div>
-  </div>
-
-  <div class="skill">
-    <span>SQL</span>
-    <div class="bar"><div style="width:80%"></div></div>
-  </div>
+<!-- SKILLS -->
+<section id="skills" class="skills">
+  <h2>Skills</h2>
+  <div class="skill"><span>Python</span><div class="bar"><div style="width:85%"></div></div></div>
+  <div class="skill"><span>Power BI</span><div class="bar"><div style="width:90%"></div></div></div>
+  <div class="skill"><span>SQL</span><div class="bar"><div style="width:80%"></div></div></div>
 </section>
 
-<section class="projects reveal">
-  <h3>Projects</h3>
-
-  <div class="project" onclick="openModal()">
-    <h4>IPL Cricket Performance Analytics</h4>
-    <p>17 seasons | Power BI | DAX</p>
-  </div>
+<!-- STATS -->
+<section class="stats">
+  <div><h3>30+</h3><p>Projects</p></div>
+  <div><h3>2+</h3><p>Years Experience</p></div>
+  <div><h3>5+</h3><p>Happy Clients</p></div>
 </section>
 
-<section class="contact reveal">
-  <h3>Contact</h3>
-  <form id="contactForm">
+<!-- PROJECTS -->
+<section id="projects" class="projects">
+  <h2>Projects</h2>
+  <div class="proj-card">Project 1</div>
+  <div class="proj-card">Project 2</div>
+  <div class="proj-card">Project 3</div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact">
+  <h2>Contact Me</h2>
+  <form>
     <input type="text" placeholder="Your Name" required>
     <input type="email" placeholder="Your Email" required>
     <textarea placeholder="Message" required></textarea>
@@ -72,15 +68,6 @@
   </form>
 </section>
 
-<!-- MODAL -->
-<div id="modal">
-  <div class="modal-content">
-    <span onclick="closeModal()">×</span>
-    <h3>IPL Analytics Case Study</h3>
-    <p>End-to-end Power BI dashboard using 17 years of IPL data.</p>
-  </div>
-</div>
-
-<script src="js/script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
